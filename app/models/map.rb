@@ -3,6 +3,6 @@ class Map < ApplicationRecord
   after_validation :geocode
 
   def address
-    [street, city, state, country].compact.join(', ')
+    [street, citys, state, country].compact.join(', ')
   end
 end
